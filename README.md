@@ -1,16 +1,36 @@
-# React + Vite
+# SOUNDGRAM
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Каркас фронтенд-части SOUNDGRAM на данный момент (тестовое на Frontend-разработчика)
 
-Currently, two official plugins are available:
+**Ссылка на результат:** https://soundgram-rho.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+## Реализовано:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Лента 
+-   Первый экран, в котором отображается список треков с учетом подготовки к работе с большими объемами данных: использована семантическая верстка и оптимизированные стили карточек (данные пока просто заглушки из моих любимых песен; можете оценить мой музыкальный вкус)
+*   При нажатии на кнопку Play трек передается в глобальное состояние приложения для бесшовного проигрывания (через ЯМ)
 
-## Expanding the ESLint configuration
+### Плеер 
+*   Реализована интеграция внешнего **HTML-плеера через iframe**
+*   Плеер вынесен в отдельную шторку, которая закреплена над навигацией, чтоюы можно было пользователю продолжать прослушивание, перемещаясь по другим разделам приложения (например зайти в профиль, не прерывая прослушивание песни)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Поиск
+*   Создан каркас экрана поиска с адаптивным полем ввода.
+
+### Профиль 
+*   Отображаются данных пользователя (никнейм, аватар, статистика)
+*   Кнопка подписки/отписки кликабельна, состояние изменяется
+*   При нажатии на подписки показывает список подписчиков (пока заглушки)
+
+## Эстетика!!!
+*   Я старалась соответствовать примерное стилистике и айдентике, так что использовала глубокие синие оттенки + добавила градиентное размытие между синим и черным, думаю, получилось попасть в 
+стиль проекта
+*   Все адаптировано под экраны смартфонов Использовала Touch-friendly элементы (нижняя навигация, увеличенные области нажатия)
+
+
+## Как запустить проект локально
+
+1. Установите зависимости:
+   ```bash
+   npm install

@@ -12,6 +12,7 @@ function Navigation() {
 }
 
 
+
 const styles = {
   nav: {
     position: 'fixed',

@@ -14,7 +14,7 @@ export const mockTracks = [
     cover: "https://upload.wikimedia.org/wikipedia/en/2/2a/Linkin_Park_Hybrid_Theory_Album_Cover.jpg",
     iframeUrl: "https://music.yandex.ru/iframe/album/12360955/track/178495"
   },
-  
+
   {
     id: 3,
     title: "next to you",
@@ -44,5 +44,14 @@ export const mockTracks = [
     cover: "https://avatars.yandex.net/get-music-content/15018579/6aacfa83.a.36596536-1/400x400",
     iframeUrl: "https://music.yandex.ru/iframe/album/36596536/track/139093096"
   },
+    {
+    id: 6,
+    title: "Все хотят меня поцеловать",
+    artist: "Пошлая Молли",
+    cover: "https://avatars.yandex.net/get-music-content/8316823/0037443c.a.24718425-1/600x600",
+    iframeUrl: "https://music.yandex.ru/iframe/album/24718425/track/38931996"
+  },
 
 ];
+
+

@@ -14,7 +14,7 @@ function ProfilePage() {
 
   const [isFollowed, setIsFollowed] = useState(false);
   const [showFollowing, setShowFollowing] = useState(false);
-  const followingList = ["Kriper2004", "Jeffrey Epstein", "Nogotochki_krasnodar", "Danil_kolbasenko"];
+  const followingList = ["Kriper2004", "Jeffrey Epstein", "Nogotochki_krasnodar52", "Danil_kolbasenko"];
 
   return (
     <div style={styles.container}>
